@@ -181,6 +181,16 @@
             <field name="context">{'search_default_state':'handed','default_type':'issue_check'}</field>
         </record>
 
+        <!-- Bank Menu -->
+        <record model="ir.actions.act_window" id="action_res_bank">
+            <field name="name">Bancos</field>
+            <field name="res_model">res.bank</field>
+            <field name="view_type">form</field>
+            <field name="view_mode">tree,form</field>
+            <!-- <field name="search_view_id" ref=""/> -->
+            <!-- <field name="view_id" ref="view_account_check_tree"/> -->
+        </record>
+
 
         <menuitem
             id="account_menuitem_bank"
@@ -194,14 +204,21 @@
             name="Cheques Propios"
             parent="account_menuitem_bank"
 	    action="action_issue_check" 
-            sequence="4"/>
+            sequence="10"/>
 
         <menuitem
             id="account_menuitem_third_checks"
             name="Cheques de Terceros"
             parent="account_menuitem_bank"
 	    action="action_third_check" 
-            sequence="4"/>
+            sequence="20"/>
+
+        <menuitem
+            id="account_menuitem_banks"
+            name="Bancos"
+            parent="account_menuitem_bank"
+	    action="action_res_bank" 
+            sequence="40"/>
 
     </data>
 </openerp>
