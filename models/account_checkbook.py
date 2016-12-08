@@ -69,6 +69,7 @@ class AccountCheckbook(models.Model):
         default='draft',
         copy=False
     )
+    bank_id = fields.Many2one('res.bank',string='Banco')
 
     @api.model
     def create(self, vals):

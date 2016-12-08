@@ -8,6 +8,7 @@
             <field name="arch" type="xml">
                 <tree string="Checkbooks" colors="blue:state == 'draft';black:state in ('active');red:state == 'hrejected';gray:state == 'used'">
                     <field name="name"/>
+                    <field name="bank_id"/>
                     <field name="next_number"/>
                     <field name="range_to"/>
                     <!-- <field name="debit_journal_id"/> -->
@@ -28,6 +29,7 @@
                     <sheet string="Checkbooks">
                         <group>
                             <field name="name" invisible="1"/>
+                    	    <field name="bank_id"/>
                             <field name="issue_check_subtype"/>
                             <field name="sequence_id"/>
                             <field name="range_to"/>
