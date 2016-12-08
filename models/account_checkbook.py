@@ -94,9 +94,9 @@ class AccountCheckbook(models.Model):
     def _compute_name(self):
         for rec in self:
             if rec.issue_check_subtype == 'deferred':
-                name = _('Deferred Checks')
+                name = _('Deferred Checks') + ' - ' + rec.bank_id.name
             else:
-                name = _('Currents Checks')
+                name = _('Currents Checks') + ' - ' + rec.bank_id.name
             rec.name = name
 
     @api.one
