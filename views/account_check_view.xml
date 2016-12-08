@@ -191,15 +191,6 @@
             <!-- <field name="view_id" ref="view_account_check_tree"/> -->
         </record>
 
-        <record model="ir.actions.act_window" id="action_account_checkbook">
-            <field name="name">Chequeras</field>
-            <field name="res_model">account.checkbook</field>
-            <field name="view_type">form</field>
-            <field name="view_mode">tree,form</field>
-            <!-- <field name="search_view_id" ref=""/> -->
-            <!-- <field name="view_id" ref="view_account_check_tree"/> -->
-        </record>
-
 
         <menuitem
             id="account_menuitem_bank"
@@ -221,13 +212,6 @@
             parent="account_menuitem_bank"
 	    action="action_third_check" 
             sequence="20"/>
-
-        <menuitem
-            id="menuitem_account_checkbook"
-            name="Chequeras"
-            parent="account_menuitem_bank"
-	    action="action_account_checkbook" 
-            sequence="30"/>
 
         <menuitem
             id="account_menuitem_banks"

@@ -29,6 +29,7 @@
                     <sheet string="Checkbooks">
                         <group>
                             <field name="name" invisible="1"/>
+                    	    <field name="journal_id"/>
                     	    <field name="bank_id"/>
                             <field name="issue_check_subtype"/>
                             <field name="sequence_id"/>
