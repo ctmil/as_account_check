@@ -185,15 +185,14 @@
         <menuitem
             id="account_menuitem_bank"
             name="Bancos"
-            parent="account.account_account_menu"
             groups="account.group_account_user"
+            parent="account.menu_finance"
             sequence="4"/>
 
         <menuitem
             id="account_menuitem_issue_checks"
             name="Cheques Propios"
             parent="account_menuitem_bank"
-            groups="account.group_account_user"
 	    action="action_issue_check" 
             sequence="4"/>
 
