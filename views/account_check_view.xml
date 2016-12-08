@@ -196,5 +196,12 @@
 	    action="action_issue_check" 
             sequence="4"/>
 
+        <menuitem
+            id="account_menuitem_third_checks"
+            name="Cheques de Terceros"
+            parent="account_menuitem_bank"
+	    action="action_third_check" 
+            sequence="4"/>
+
     </data>
 </openerp>
