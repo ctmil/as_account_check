@@ -13,7 +13,7 @@
                     <field name="journal_id" invisible="1"/>
                     <field name="name"/>
                     <field name="issue_date"/>
-                    <!-- <field name="payment_date"/> -->
+                    <field name="payment_date"/> 
                     <field name="partner_id"/>
                     <!-- <field name="source_partner_id" invisible="context.get('default_type',False) != 'third_check'" string="Source Partner"/> -->
                     <!-- <field name="destiny_partner_id" string="Destiny Partner"/> -->
