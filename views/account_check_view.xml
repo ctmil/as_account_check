@@ -145,17 +145,17 @@
         </record> 
 
         <!-- mode="month" --> 
-<!--         <record model="ir.ui.view" id="view_account_check_calendar">
+       <record model="ir.ui.view" id="view_account_check_calendar">
             <field name="name">account.check.calendar</field>
             <field name="model">account.check</field>
             <field name="arch" type="xml">
                 <calendar string="Checks" 
                           date_start="payment_date" 
-                          color="destiny_partner_id">
+                          color="partner_id">
                     <field name="amount"/>
                 </calendar>
             </field>
-        </record> -->
+        </record> 
 
         <!-- Third Check Menu -->
         <record model="ir.actions.act_window" id="action_third_check">
