@@ -232,6 +232,11 @@ class AccountCheck(models.Model):
         # related='move_line_id.date_maturity',
         # store=True,
         # readonly=True,
+        'Payment Date',
+        required=True,
+        readonly=True,
+        states={'draft': [('readonly', False)]},
+        default=fields.Date.context_today,
     )
     journal_id = fields.Many2one(
         'account.journal',
